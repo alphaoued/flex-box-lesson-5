@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-lesson5</title>
+    <style>
+        .main-container{
+            /* border: 1px solid black; */
+        }
+        .header-box{
+            /* border: 1px solid black; */
+            margin: 10px;
+            background-color:#1E90FF ;
+            color: white;
+            height:90px;
+            border-radius: 10px;
+            text-indent: 30px;
+            padding-top: 10px;
+           
+            
+        }
+        .flex-box{
+            display: flex;
+            /* border: 1px solid black; */
+            margin: 10px;
+            
+        }
+
+        .main-box{
+            display: flex;
+            flex-wrap: wrap;
+            align-content:center;            
+            background-color: #3CB371;
+            color: white;
+            height: 700px;
+            border-radius: 10px;
+            column-gap: 25px;
+            row-gap: 15px;
+            
+            
+        }
+        .item{
+            margin-top: 50px;
+            text-align: center;
+            font-size:35px;
+            width:150px;
+            height:210px;
+            border-radius: 10px;
+            background-color:#2F8D59;
+            padding: 1px;
+            margin: 5px;
+
+    
+        }
+        .sidebar-box{
+            border: 1px solid black;
+            flex-grow: 2;
+            width:800px;
+            margin-left: 20px;
+            background-color:#FF6348 ;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 36px;
+            padding-top: 15px;
+            
+        }
+
+        .footer-box{
+            /* border:1px solid black; */
+            height:90px;
+            margin: 10px;
+            background-color: #1E90FF;
+            color: white;
+            border-radius: 10px;
+            text-indent: 30px; 
+            padding-top: 9px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header-box">
+            <h1>header</h1>
+        </div>
+        <div class="flex-box">
+            <div class="main-box">
+                <div class="item">item1</div>
+                <div class="item">item2</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+            </div>
+            <div class="sidebar-box">sidebar</div>
+        </div>
+        <div class="footer-box">
+            <h1>footer</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
